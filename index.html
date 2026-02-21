@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Física: Força elétrica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- f = q1*q2*9*10^9/d^2 -->
+     <div id = "main">
+        <div id = "forca">
+            <div id = "icognitas">
+                <input class="icognita" type="number" id = "icognitaF" placeholder="F">
+                <span>*10^</span>
+                <input class="potenciaDeIcognita" type="number" id = "potenciaF" placeholder="0" value="0">
+                <span>=</span>
+                <input class="icognita" type="number" id = "icognitaQ1" placeholder="Q1">
+                <span>*10^</span>
+                <input class="potenciaDeIcognita" type="number" id = "potenciaQ1" placeholder="0" value="0">
+                <span>*</span>
+                <input class="icognita" type="number" id = "icognitaQ2" placeholder="Q2">
+                <span>*10^</span>
+                <input class="potenciaDeIcognita" type="number" id = "potenciaQ2" placeholder="0" value="0">
+                <span>* 9^9</span>
+                <hr>
+                <span>(</span>
+                <input class="icognita" type="number" id = "icognitaD" placeholder="d"><span>*10^</span>
+                <input class="potenciaDeIcognita" type="number" id = "potenciaD" placeholder="0" value="0"><span> )^2</span>
+            </div>
+            <br>
+            <button onclick="calcularForca()">Resultado</button>
+            <p id="resultadoForca" class="resultado"></p>
+        </div>
+
+        <script src="index.js"></script>
+
+
+     </div>
+
+<footer>
+    <br>
+    <button><a href="posEquilibrio.html">posiçao de equilibrio</a></button>
+    <button><a href="forcaComDoisPontos.html">Forca resultante com 3 cargas</a></button>
+</footer>
+
+
+</body>
+</html>

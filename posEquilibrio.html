@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Física: posição de equilibrio da Força elétrica (3 pontos)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "main">
+        <div id = "equilibrio">
+            <div id = "icognitas">
+                <input class="icognita" type="number" id = "Q1" placeholder="Q1">
+                <span>*10^</span>
+                <input class="potenciaDeIcognita" type="number" id = "potenciaQ1" placeholder="0" value="0">
+                
+                <input class="icognita" type="number" id = "icognitaQ1" placeholder="Q2">
+                <span>*10^</span>
+                <input class="potenciaDeIcognita" type="number" id = "potenciaQ2" placeholder="0" value="0">
+                
+                <input class="icognita" type="number" id = "icognitaQ3" placeholder="Q3">
+                <span>*10^</span>
+                <input class="potenciaDeIcognita" type="number" id = "potenciaQ3" placeholder="0" value="0">
+                
+                <hr>
+                <input class="icognita" type="number" id = "Intervalo" placeholder="Intervalo">
+                <span>*10^</span>
+                <input class="potenciaDeIcognita" type="number" id = "potenciaDistanciaQ1Q2" placeholder="0" value="0">
+<!-- 
+                <input class="icognita" type="number" id = "distanciaQ1Q3" placeholder="distancia de Q1 para Q3">
+                <span>*10^</span>
+                <input class="potenciaDeIcognita" type="number" id = "potenciaDistanciaQ1Q3" placeholder="0" value="0">
+
+                <input class="icognita" type="number" id = "distanciaQ2Q3" placeholder="distancia de Q2 para Q3">
+                <span>*10^</span>
+                <input class="potenciaDeIcognita" type="number" id = "potenciaDistanciaQ2Q3" placeholder="0" value="0"> -->
+            </div>
+            <br>
+            <button onclick="calcularEquilibrio()">Resultado</button>
+            <p id="resultadoEquilibrio" class="resultado"></p>
+        </div>
+    </div>
+
+
+    <script src="posEquilibrio.js"></script>
+    <footer>
+        <br>
+        <button><a href="index.html">Forca resultante</a></button>
+        <button><a href="forcaComDoisPontos.html">Forca resultante com 3 cargas</a></button>
+    </footer>
+</body>
+</html>

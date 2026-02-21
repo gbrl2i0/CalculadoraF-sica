@@ -1,0 +1,44 @@
+
+body{
+    background-color: black;
+    color: white;
+    border: 5px solid;
+    border-radius: 10px;
+    padding: 10px;
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: antiquewhite;
+}
+button:active{
+    transform: scale(0.9);
+    background-color: white;
+}
+
+#main{
+    width: 800px;
+    border: 5px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#icognitas{
+    text-align: center;
+    border: 3px solid;
+    padding: 10px;
+}
+.resultado{
+    border: 2px solid;
+    min-height: 20px;
+}
+.icognita{
+    width: 80px;
+}
+.potenciaDeIcognita{
+    width: 80px;
+}
