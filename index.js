@@ -30,13 +30,20 @@ function calcularForca(){
                     output = `F=${res}*10^${resP}N`
                     break;
                 case "Q1":
+
+                    
                     res = (F*d)/Q2*9
-                    resp = (FP+dP)-(Q2P+9)
+                    resP = (FP+dP)-(Q2P+9)
                     output = `Q1=${res}*10^${resP}C`
                     break;
                 case "Q2":
+                    if(!Q1){
+                        res = Math.sqrt((F*d)/9)
+                        resP = ((FP+dP)-(9))/2
+                    }
+                    else{
                     res = (F*d)/Q1*9
-                    resp = (FP+dP)-(Q1P+9)
+                    resP = (FP+dP)-(Q1+9)}
                     output = `Q2=${res}*10^${resP}C`
                     break;
                 case "d":
@@ -52,5 +59,6 @@ function calcularForca(){
     resultadoForca.textContent=output
 
     
+
 
 }
